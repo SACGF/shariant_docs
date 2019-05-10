@@ -3,22 +3,35 @@ Welcome to Shariant Integration documentation
 
 .. toctree::
    :maxdepth: 1
-   :caption: Contents:
+   :caption: Basics:
 
    integration/basics/overview
    integration/basics/getting_started
    integration/basics/lifecycle
    integration/basics/sharing
    integration/basics/variant_matching
+   site/index
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Evidence Keys:
 
    integration/evidence_keys/overview
    integration/evidence_keys/types
+
+.. toctree::
+   :maxdepth: 1
+   :caption: API:
 
    integration/api/philosophy
    integration/api/authentication
    integration/api/classification_request
    integration/api/classification_response
    integration/api/classification_bulk
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Web Interface:
 
    site/users
    site/classification_listing
