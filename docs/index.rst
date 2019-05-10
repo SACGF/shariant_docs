@@ -9,8 +9,8 @@ Welcome to Shariant Integration documentation
    integration/basics/getting_started
    integration/basics/lifecycle
    integration/basics/sharing
-   integration/basics/variant_matching
-   site/index
+   integration/basics/variant_matching_overview
+   integration/basics/variant_matching_technical
 
 .. toctree::
    :maxdepth: 1

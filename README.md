@@ -1,1 +1,1 @@
-Please see our readthedocs page here... (to be linked)
+Please see our documentation here https://readthedocs.org/projects/shariant/
