@@ -1,8 +1,5 @@
 # Variant Matching Overview
 
-## Scope
-Shariant Variant Normalisation Process describes the variant normalisation protocol implemented for the Australian Genomics initiative, Shariant. It should be read in conjunction with Shariant Technical Overview.
-
 ## Abbreviations
 
 |abr|Meaning|

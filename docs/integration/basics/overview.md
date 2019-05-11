@@ -1,17 +1,17 @@
 # Integration Overview
 
-You have variant classifications in your own curation system and you want them to be in ours.
+### Your variant classifications into Shariant
 
-What are the basic goals here:
+Goals:
 
 * Ensure we can consistantly match records to variants.
 * Compare classifications (across different labs) for the same variant in a meaningful way.
 * Format the classification for submission to other databases such as Clinvar, which will have their own structure requirements.
-* (Avoid providing patient identifiable information).
+* Avoid providing patient identifiable information.
 
-Also we have variant classifications in our database and you want access to them in your curation system.
+### Our variant classifications into your curation system
 
-What are the basic goals here:
+Goals:
 
 * Ability to retrieve an extract from our Shariant and import it in a different track into yours
 and/or
