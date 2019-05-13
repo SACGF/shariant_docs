@@ -2,11 +2,11 @@
 
 A variant classification in Shariant is mostly comprised of evidence key values.
 
-[Evidence keys can be viewed here](https://shariant.org.au/variantclassification/evidence_keys)
+[Evidence keys can be viewed here : Human Friendly](https://shariant.org.au/variantclassification/evidence_keys)
 
-or if you have a Shariant login
+or if you have a Shariant login and want the raw data
 
-[Evidence keys can be viewed here](https://shariant.org.au/variantclassification/api/evidence_keys)
+[Evidence keys can be viewed here : API](https://shariant.org.au/variantclassification/api/evidence_keys)
 
 Some extra notes
 
