@@ -10,6 +10,10 @@ https://shariant.org.au/variantclassification/api/classifications/record/
 {
 	"id":"xyz_pathology/north_street_lab/F03432",
 	"upsert": {
+		"c_hgvs": "NM_032119.3:c.4171G>A",
+		"clinical_significance": "VUS",
+		"bp4": true,
+		"mode_of_inheritance": ["autosomal_dominant", "autosomal_recessive"],
 		"literature": "Found a book PMID: 342244"
 	},
 	"publish": "institution",
@@ -138,13 +142,21 @@ This is because your own curation system is deemed to be the source of truth abo
 The selective immutability will allow web form users to provide values for keys that your curation system can’t provide if necessary.
 Importantly web user’s ability to change the text for a “note” is not affected by the immutability status.
 
-Formats
+### Formats
 
 `key : null` This completely blanks out any value associated with the key. Value, note, immutability will all be reset.
 `key : value` This will set the value for a key as well as wiping any note. Web form immutability will be set unless otherwise configured.
 `key : { “value”: "<value>", “note”: "<note>" }` If only value or note are provided, this will merge with existing data. e.g. only providing value will leave any existing note untouched. Immutability will be set.
 
 The preferred method is `key: {“value”: x}` (with note only if your curation system can send notes). For records that don’t have values for certain keys that you would normally sync, provide `key: {“value”: null}` instead of omitting the entry all together. This is so immutability is set appropriately.
+
+### Values
+
+The individual entries valid for values will depend on the associated key types,
+e.g. "BP4" accepts "NM", "BS", "BP", <etc>, true
+"variant_type" accepts "indel", "splice_site" etc
+"mode_of_inheritance" accepts ["autosomal_dominant","other"] or "autosomal_dominant, other"
+See the Evidence Key Type page for more details.
 
 ## Sharing
 You can provide a publish flag in a POST. If create/patch/overwrite/upsert is provided, the publish will relate to the record as it is after applying that change.
