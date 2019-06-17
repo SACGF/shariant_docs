@@ -23,6 +23,8 @@ Parameters
 |level|editable|Will return records the current user has write access to and will be the latest version of those records including unshared changes.|
 |level|public|Will only return records that have been published to be shared with 3rd party labs|
 |level|loggd_in_users|Will only return records that have been published to be shared within Shariant|
+|labs_include|comma sep list of lab ids|Only records associated to these labs will be included|
+|labs_excluded|comma sep list of lab ids|Records associated with these labs will be excluded|
 |output|json|(Default) Output will be an JSON object with a key "records' containing all the relevant records.|
 |output|csv|Output will be a CSV file.|
 |output|redcap|Output will be a CSV file structured for REDCap. Note that only records with a value in redcap_record_id will be included.|
