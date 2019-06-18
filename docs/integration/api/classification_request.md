@@ -10,8 +10,10 @@ https://shariant.org.au/variantclassification/api/classifications/record/
 {
 	"id":"xyz_pathology/north_street_lab/F03432",
 	"upsert": {
-		"c_hgvs": "NM_032119.3:c.4171G>A",
+		"c_hgvs": "NM_000071.2(CBS):c.1539C>T",
+		"genome_build": "GRCh37",
 		"clinical_significance": "VUS",
+		"zygosity": "hemizygous",
 		"bp4": true,
 		"mode_of_inheritance": ["autosomal_dominant", "autosomal_recessive"],
 		"literature": "Found a book PMID: 342244"
