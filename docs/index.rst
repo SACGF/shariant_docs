@@ -31,9 +31,10 @@ Welcome to Shariant Integration documentation
 
 .. toctree::
    :maxdepth: 1
-   :caption: Web Interface:
+   :caption: Web Interface Classifications:
 
-   site/users
+   site/classification_dashboard
+   site/classification_flags
    site/classification_listing
    site/classification_form
    site/classification_discordance
