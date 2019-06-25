@@ -30,7 +30,7 @@ So if one of your classifications meets the discordance criteria with another cl
 
 ### ![](images/checklist.png) Internal Review
 
-When discordance is first detected, discorant classifications will have an "Internal Review" flag raised against them.
+When discordance is first detected, discordant classifications will have an "Internal Review" flag raised against them.
 It is then up to someone from the lab to perform an internal review, update information in the source system for the classification (if required), and close the internal review flag.
 
 The steps you take during an internal review are up to the discretion of your lab.
