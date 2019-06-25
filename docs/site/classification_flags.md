@@ -1,6 +1,6 @@
 # Classification Flags
 
-Each classification flag indiciates there is an action that needs to be performed against the classification.
+Each classification flag indiciates that there is an action that needs to be performed against the classification.
 
 Many of the flags will be automatically raised by Shariant, though some of them you will be able to open yourself.
 
@@ -10,15 +10,15 @@ To look at the details of a specific open flag, simply click on it to be taken t
 
 ![](images/flag_dialog.png)
 
-From the flag dialog you can look at the timeline of the classification and see who performed what actions when. On the timeline tab there's also the ability to star a classification, which means it will be easy to find 
+From the flag dialog you can look at the timeline of the classification and see who performed which actions when. On the timeline tab, there's also the ability to star a classification, which means it will be easy to find.
 
 You can visit the details of an open flag, or a closed one (closed flags will be crossed out on the flag dialog tabs).
 
-From the details page of an open flag, depending on the type of flag you can add a comment and potentially close the flag.
+From the details page of an open flag, depending on the type of flag, you can add a comment and potentially close the flag.
 
 You can raise a new flag by clicking on one of the tabs with a plus button.
 
-(The kinds of actions you can take on flags will depend on if you're looking at a classification from one of your labs or somebody elses.)
+(The kinds of actions you can take on flags will depend on if you're looking at a classification from your lab or another lab.)
 
 See below for flags and how to solve them:
 
@@ -48,8 +48,8 @@ Review the suggestion and take one of the following actions:
 * Add a reason why and click "Reject Suggestion" on the flag.
 
 ### ![](images/exchange.png) Significance Changed
-This classificaiton had previously been submitted under a different classification than it is now. e.g. It has gone from Benign to Likely Benign, from VUS to Likely Pathogenic.
-For our statistics we would like to know what was the cause of this change.
+This classification has previously been submitted under a different classification than it is now. e.g. It has gone from Benign to Likely Benign, from VUS to Likely Pathogenic.
+For our statistics, we would like to know what caused this change.
 
 Open the flag, add any appropriate text and click the reason that best describes why the classification was changed.
 
