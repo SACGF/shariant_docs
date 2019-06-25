@@ -4,6 +4,8 @@ All operations against a variant classification submission from your lab can be 
 That end point being
 https://shariant.org.au/variantclassification/api/classifications/record/
 
+Ensure that any posts there are passing the required authentication data and is sending data as ContentType "application/json"
+
 ## Example Post
 
 ```json

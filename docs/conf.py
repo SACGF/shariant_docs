@@ -16,7 +16,6 @@
 
 
 # -- Project information -----------------------------------------------------
-
 project = 'Shariant'
 copyright = '2019, AGHA'
 author = 'Australian Genomics Health Alliance'
