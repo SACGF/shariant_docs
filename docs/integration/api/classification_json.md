@@ -1,6 +1,10 @@
-# API Variant Classification Response
+# API Variant Classification JSON
 
 An example of the result of a GET or POST below
+
+THIS EXAMPLE IS OUT OF DATE AND USES v1 OF THE API.
+VERSION 2 MAKES THE OUTPUT MIRROR THE IMPORT FORMAT, MOVING MOST OF THE CALCULATED FIELDS TO A "meta" object.
+
 ```json
 {
     "id": 31,

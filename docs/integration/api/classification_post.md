@@ -1,4 +1,4 @@
-# API Variant Classification GET/POST
+# API Variant Classification POST
 All operations against a variant classification submission from your lab can be performed against a single end point.
 
 That end point being
@@ -33,24 +33,19 @@ or
 }
 ```
 
-## Example GET
-
-`https://shariant.org.au/variantclassification/api/classifications/record/xyz_pathology/north_street_lab/F03432?data=flat&config=true`
-
 ## All Parameters
 
-|POST|GET|Effect|
-|----|---|------|
-|"id":_xxx_|in URL|See Id Part|
-|"create":{} _or_ "patch":{} _or_ "overwrite":{} _or_ "upsert":{} _or_ "data":{}|N/A|See Evidence Operation|
-|"publish":"_level_"|N/A|see Publish|
-|"delete":true|N/A|See Deleting |
-|"test":true|N/A|The effects of your POST operation will not be saved on the server. This is handy for validation.|
-|"config":true|?config=true|Will return your lab’s evidence key configuration that will be merged with the default configuration for the web form. For the sake of syncing data, ignore this option.|
-|"editable": true|N/A|Will not mark uploaded values as for web form users, i.e. they'll be able to overwrite what was uploaded.|
-|"return_data": "true"|(default)|Will return the complete list of evidence stored against this record|
-|"return_data": "flat"|?data=flat|As above but not-nested, so a note would be returned as `"c_hgvs.note":true`
-|"return_data": "changes"|N/A|Returns only the evidence that changed as a result of your POST|
+|POST|Effect|
+|----|------|
+|"id":_xxx_|See Id Part|
+|"create":{} _or_ "patch":{} _or_ "overwrite":{} _or_ "upsert":{} _or_ "data":{}|See Evidence Operation|
+|"publish":"_level_"|see Publish|
+|"delete":true|See Deleting |
+|"test":true|The effects of your POST operation will not be saved on the server. This is handy for validation.|
+|"editable": true|Will not mark uploaded values as immutable for web form users, i.e. they'll be able to overwrite what was uploaded.|
+|"return_data": "true"|Will return the complete list of evidence stored against this record|
+|"return_data": "flat"|As above but not-nested, so a note would be returned as `"c_hgvs.note":true`
+|"return_data": "changes"|Returns only the evidence that changed as a result of your POST|
 
 ## ID Part
 To uniquely identify the record, its id can be part of the URL, or provided as part of JSON submission.
@@ -79,17 +74,6 @@ or
 	"version":1557189685.485863
 }}
 ```
-If referring to this information in the URL instead of JSON, it will be in the form of 
-<div style="font-size:10pt">
-`https://shariant.org.au/variantclassification/api/classifications/record/[lab]/[lab_record_id](.version)` where the (.version) is optional
-e.g.
-`https://shariant.org.au/variantclassification/api/classifications/record/xyz_pathology/north_street_lab/F03432.1557189685.485863`
-
-OR
-
-`https://shariant.org.au/variantclassification/api/classifications/record/[rid](.version)` where the (.version) is optional
-`https://shariant.org.au/variantclassification/api/classifications/record/1453.1557189685.485863`
-</div>
 
 ## Versions
 Any change to the evidence of a record will automatically create a new version of that record.
@@ -189,3 +173,15 @@ Each share level is inclusive of all previous share levels. If on Monday you pub
 
 Records that haven't been shared with logged in users or global can be deleted by including
 `"delete": true`
+
+## Bulk POST
+To perform multiple operations in one call, simply post a JSON array instead of a dictionary, e.g.
+```json
+{
+	"records":[
+		{"id":77, "patch": {"ps1":"NM"}},
+		{"id":78, "delete": true},
+	]
+}
+``` 
+Though it is best if this is batched to no more than 20 operations per POST.

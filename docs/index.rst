@@ -25,9 +25,9 @@ Welcome to Shariant Integration documentation
 
    integration/api/philosophy
    integration/api/authentication
-   integration/api/classification_request
-   integration/api/classification_response
-   integration/api/classification_bulk
+   integration/api/classification_post
+   integration/api/classification_export
+   integration/api/classification_json
 
 .. toctree::
    :maxdepth: 1
