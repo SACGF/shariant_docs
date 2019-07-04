@@ -3,7 +3,13 @@ Welcome to Shariant Integration documentation
 
 .. toctree::
    :maxdepth: 1
-   :caption: Basics:
+   :caption: FAQ:
+
+   faq/faq
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Technical Basics:
 
    integration/basics/overview
    integration/basics/getting_started
