@@ -169,10 +169,20 @@ Allowed to be shared with Clinvar or other 3rd party systems.
 
 Each share level is inclusive of all previous share levels. If on Monday you published a record to level 3, then on Tuesday you published the same record to level 2 - general Shariant users will have read-only access to the record as it was on Monday, but users within your institution will have access to the more up to date version as it was on Tuesday.
 
-## Deleting
+## Deleting / Withdrawing
 
 Records that haven't been shared with logged in users or global can be deleted by including
 `"delete": true`
+
+Records that have been shared with logged in users or global can be withdrawn by including the same
+`"delete": true`
+
+Withdrawn records:
+Can be "unwithdrawn" with a subseqeunt submission for the id that doesn't have `"delete": true`.
+Do not show up in exports.
+Do not show up in classification searches.
+Do not count towards discordance calculations.
+Will still be accessible using their id, and will still appear in historical discordance reports that they were previously involved in.
 
 ## Bulk POST
 To perform multiple operations in one call, simply post a JSON array instead of a dictionary, e.g.
