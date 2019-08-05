@@ -2,26 +2,36 @@
 
 An example of the result of a GET or POST below
 
-THIS EXAMPLE IS OUT OF DATE AND USES v1 OF THE API.
-VERSION 2 MAKES THE OUTPUT MIRROR THE IMPORT FORMAT, MOVING MOST OF THE CALCULATED FIELDS TO A "meta" object.
-
 ```json
 {
     "id": 31,
-    "lab_record_id": "77",
-    "institution_name": "SA Pathology",
-    "lab_id": "sa_pathology/unit_1",
-    "lab_name": "SA Pathology Unit 1",
-    "title": "SA Pathology Unit 1 31",
-    "user": "varadmin",
-    "version": 1544864360.852882,
-    "can_write": true,
-    "can_write_latest": true,
-    "flag_collection": 13,
-    "has_changes": true,
-    "last_edited": 1553238219.242146,
-    "variant_id": 483370,
-    "variant": "11:103048382 T>A",
+    "meta": {
+        "lab_record_id": "77",
+        "institution_name": "SA Pathology",
+        "lab_id": "sa_pathology/unit_1",
+        "lab_name": "SA Pathology Unit 1",
+        "title": "SA Pathology Unit 1 31",
+        "user": "varadmin",
+        "version": 1544864360.852882,
+        "can_write": true,
+        "can_write_latest": true,
+        "flag_collection": 13,
+        "has_changes": true,
+        "last_edited": 1553238219.242146
+    },
+    "allele": {
+        "clingen_allele_id": "CA396457842",
+        "genome_builds": {
+            "GRCh37": {
+                "variant_coordinate": "16:68842599 A>G",
+                "g_hgvs": "NC_000016.9:g.68842599A>G",
+                "c_hgvs": "NM_004360.4(CDH1):c.535A>G",
+                "origin": "Imported as this build",
+                "variant_id": 535913
+            }
+        }
+    },
+    "publish": "logged_in_users",
     "data": {
         "age": {
             "value": "76"

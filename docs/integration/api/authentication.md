@@ -2,7 +2,7 @@
 
 The Shariant API will require authentication to perform any operation. The authentication is currently provided through OAuth2 via Keycloak.
 
-The OAuth URL is
+The OAuth URL (for production and test) is
 `https://shariant.org.au/auth/realms/agha/protocol/openid-connect/token`
 provide a client_id of
 `shariant-client-tool`
@@ -31,9 +31,8 @@ def ping() {
 	)
 	auth = OAuth2(client_id = client_id, token = token)
 
-	r = requests.get('https://shariant.org.au/variantclassification/api/evidence_keys', auth=auth)
+	r = requests.get('https://shariant.org.au:444/variantclassification/api/evidence_keys', auth=auth)
 }
 ```
 
-Note that any classifications you make through the API will be assigned to the username used here by default.
-Records "owner" propert
+Note that any classifications you make through the API will be assigned to the user used to authenticate against the API by default.

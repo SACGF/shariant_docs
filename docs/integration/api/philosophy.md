@@ -7,3 +7,6 @@ There are some fundamental principals that we're currently applying to the API
 * There will be a level of normalisation applied to submitted data, case insensitive "true", "T", 1 will be converted to `true` - and "false", "F" and 0 to `false` for boolean fields, drop down field values will have their case corrected. The level of normalisation will be limited as to reduce unexpected behaviour.
 * We'll be mainly accepting free form text, so citing of publications or other resources will be achieved by parsing through the text looking for patterns, such as "PMID: XXXX" rather than requiring special structure in the submission.
 * Under no circumstances should patient identifiable data be uploaded.
+
+Please note there is a test server https://shariant.org.au:444/
+The same privacy rules apply to the test server (e.g. even when testing ensure personal patient details do not get uploaded) but you are free to send dummy data to the test server.

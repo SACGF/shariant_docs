@@ -65,4 +65,4 @@ Assigning resposible users may cause less coordination work for your team, thoug
 ## Step 5 : How best can your system integrate data from Shariant
 
 Shariant provides an API for bulk downloading of classifications.
-Currently we only provide classifications in our own JSON format, but on the roadmap is support for more export options such as VCF. It is expected that some systems will need custom solutions here, so some work may get done as the requirements come in.
+Currently we provide classifications in our own JSON format, CSV, MVL, VCF. It is expected that most systems will be able to use these formats but some may require a custom solution.
