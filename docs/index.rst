@@ -40,11 +40,11 @@ Welcome to Shariant Integration documentation
    :caption: Web Interface Classifications:
 
    site/classification_dashboard
-   site/classification_flags
-   site/classification_listing
-   site/classification_form
-   site/classification_discordance
    site/classification_diffs
+   site/classification_discordance
+   site/classification_flags
+   site/classification_form
+   site/classification_listing
 
 Indices and tables
 ==================
