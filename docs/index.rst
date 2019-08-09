@@ -8,6 +8,7 @@ This documentation provides information both for web users or the product, and d
    :caption: What is Shariant
 
    faq/faq
+   faq/icons
 
 .. toctree::
    :maxdepth: 1
