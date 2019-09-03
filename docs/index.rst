@@ -10,6 +10,9 @@ This documentation provides information both for web users or the product, and d
    faq/faq
    faq/icons
 
+If you are viewing classifications, fixing issues, resolving discordances
+-------------------------------------------------------------------------
+
 .. toctree::
    :maxdepth: 1
    :caption: How to Navigate Shariant
@@ -50,5 +53,6 @@ If you are working on the technical connection to Sharaint
    integration/api/philosophy
    integration/api/authentication
    integration/api/classification_post
+   integration/api/classification_owner
    integration/api/classification_export
    integration/api/classification_json
