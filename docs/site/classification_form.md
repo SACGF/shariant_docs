@@ -51,3 +51,12 @@ If the classification has only been shared at the lab or organisation level, you
 If it has been shared, instead you have the option to "withdraw". This will remove the record from most listings and search results, but will not remove it from any Discordance Reports that it had been involved in (it will no longer be a part of discordance calculations).
 
 When a record has been withdrawn it can be unwithdrawn by clicking the same button (it should look like a rubbish bin with a raised lid now).
+
+### Export
+
+You can also export the single record as CSV, a preview of the Clinvar format or as a report.
+(The report does require that your lab has a report template pre-configured.)
+
+### Literature Citations
+
+Any PMID references in the form of PMID:123456 from anywhere within the classification will be summed together and listed at the bottom of the classification.
