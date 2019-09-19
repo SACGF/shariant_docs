@@ -43,13 +43,10 @@ This classification is marked as currently being internally reviewed.
 
 This is discussed in the [Classification Discordance](classification_discordance) page.
 
-### ![](images/analysis.png) Matching Variant
-This variant has not been seen in this system previously.
-It should be linked to a variant given time.
-
-### ![](images/not-found.png) Matching Variant Failed
-We were unable to normalise the variant provided based on the c.hgvs and genome build values.
-1. Please contact Shariant support for help in resolving this.
+### ![](images/not-found.png) Matching Variant
+This classification is not yet linked to a variant
+1. If this has a status of In Progress we should match it to a variant shortly, no action required.
+2. If this has the status of Matching Failed We were unable to normalise the variant provided based on the c.hgvs and genome build values. Please contact Shariant support for help in resolving this
 
 ### ![](images/outstanding_edits.png) Outstand Edits
 Edits have been made to this classification that are not included in a published version.
