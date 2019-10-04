@@ -45,7 +45,7 @@ The share levels are
 * All Shariant Users
 * 3rd Party Databases (this will allow us to upload the record to Clinvar at a later date)
 
-Delete / Withdraw
+### Delete / Withdraw
 
 If the classification has only been shared at the lab or organisation level, you are able to perform a hard delete on the record.
 If it has been shared, instead you have the option to "withdraw". This will remove the record from most listings and search results, but will not remove it from any Discordance Reports that it had been involved in (it will no longer be a part of discordance calculations).
