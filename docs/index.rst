@@ -56,3 +56,4 @@ If you are working on the technical connection to Sharaint
    integration/api/classification_owner
    integration/api/classification_export
    integration/api/classification_json
+   integration/api/external_references
