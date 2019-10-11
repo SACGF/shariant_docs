@@ -10,10 +10,10 @@ To look at the details of a specific open flag, simply click on it to be taken t
 
 ![](images/flag_dialog.png)
 
-From the flag dialog you can view summaries about what flags are currently open, see a list of flags that have been resolved as well as raise new ones.
-Note that only important flags still show up when closed, e.g. suggestions and internal reviews and a few others.
+From the flag dialog, you can view summaries about what flags are currently open, see a list of flags that have been resolved as well as raise new ones.
+Note that only important flags still show up when closed, e.g. suggestions and internal reviews.
 
-In the provided screenshot we can see we have an open flag asking us to share the classification, a completed internal review, an accepted suggestion and a rejected suggestion, as well as the buttons to create new internal reviews and suggestions.
+In the provided screenshot, we can see that we have an open flag asking us to share the classification, a completed internal review, an accepted suggestion and a rejected suggestion, as well as the buttons to create new internal reviews and suggestions.
 
 You can visit the details of an open flag, or a closed one by clicking on the icon.
 
@@ -46,7 +46,7 @@ This is discussed in the [Classification Discordance](classification_discordance
 ### ![](images/not-found.png) Matching Variant
 This classification is not yet linked to a variant
 1. If this has a status of In Progress we should match it to a variant shortly, no action required.
-2. If this has the status of Matching Failed We were unable to normalise the variant provided based on the c.hgvs and genome build values. Please contact Shariant support for help in resolving this
+2. If this has the status of Matching Failed we were unable to normalise the variant provided based on the c.hgvs and genome build values. Please contact Shariant support for help in resolving this.
 
 ### ![](images/outstanding_edits.png) Outstanding Edits
 Edits have been made to this classification that are not included in a published version.
@@ -74,6 +74,6 @@ This classification is not yet shared outside of your lab or institution.
 
 ### ![](images/trash.png) Withdrawn
 This classification has been marked as withdrawn. It will be hidden from almost all searches and exports.
-1. If the classification is not of high enough quality or in error, you may leave it as "withdrawn" indefinately.
+1. If the classification is not of high enough quality or in error, you may leave it as "withdrawn" indefinitely.
 2. If you wish to un-withdraw the classification, click the open bin icon in actions from the variant classification form.
 (Note you can't open a Withdrawn flag, but you can Withdraw/Unwithdraw from the classification form)
