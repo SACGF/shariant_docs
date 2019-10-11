@@ -48,7 +48,7 @@ This classification is not yet linked to a variant
 1. If this has a status of In Progress we should match it to a variant shortly, no action required.
 2. If this has the status of Matching Failed We were unable to normalise the variant provided based on the c.hgvs and genome build values. Please contact Shariant support for help in resolving this
 
-### ![](images/outstanding_edits.png) Outstand Edits
+### ![](images/outstanding_edits.png) Outstanding Edits
 Edits have been made to this classification that are not included in a published version.
 1. From the classification form, ensure there are no validation errors stopping this record from being published.
 2. At the bottom of the form, click the tick to submit the outstanding changes.
