@@ -38,15 +38,15 @@ or
 
 |POST|Effect|
 |----|------|
-|"id":_xxx_|See Id Part|
-|"create":{} _or_ "patch":{} _or_ "overwrite":{} _or_ "upsert":{} _or_ "data":{}|See Evidence Operation|
-|"publish":"_level_"|see Publish|
-|"delete":true|See Deleting |
-|"test":true|The effects of your POST operation will not be saved on the server. This is handy for validation.|
-|"editable": true|Will not mark uploaded values as immutable for web form users, i.e. they'll be able to overwrite what was uploaded.|
-|"return_data": "true"|Will return the complete list of evidence stored against this record|
-|"return_data": "flat"|As above but not-nested, so a note would be returned as `"c_hgvs.note":true`
-|"return_data": "changes"|Returns only the evidence that changed as a result of your POST|
+|`"id":_xxx_`|See Id Part|
+|`"create":{}` or `"patch":{}` or `"overwrite":{}` or `"upsert":{}` or `"data":{}`|See Evidence Operation|
+|`"publish":"_level_"`|see Publish|
+|`"delete":true`|See Deleting |
+|`"test":true`|The effects of your POST operation will not be saved on the server. This is handy for validation.|
+|`"editable": true`|Will not mark uploaded values as immutable for web form users, i.e. they'll be able to overwrite what was uploaded.|
+|`"return_data": true`|Will return the complete list of evidence stored against this record|
+|`"return_data": "flat"`|As above but not-nested, so a note would be returned as `"c_hgvs.note":true`
+|`"return_data": "changes"`|Returns only the evidence that changed as a result of your POST|
 
 ## ID Part
 To uniquely identify the record, its id can be part of the URL, or provided as part of JSON submission.
