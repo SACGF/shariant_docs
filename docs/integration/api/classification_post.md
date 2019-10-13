@@ -49,18 +49,18 @@ or
 |`"return_data": "changes"`|Returns only the evidence that changed as a result of your POST|
 
 ## ID Part
-To uniquely identify the record, its id can be part of the URL, or provided as part of JSON submission.
+To uniquely identify the record, its ID can be part of the URL, or provided as part of JSON submission.
 
-While we will assign a Sharint ID to all records, upon creation of a record you can assign it your own internal ID that only needs to be unique within your lab. You can then continue to use your internal ID for all future references.
+While we will assign a Shariant ID to all records, upon creation of a record you can assign it your own internal ID that only needs to be unique within your lab. You can then continue to use your internal ID for all future references.
 
 The ID part of a submission consists of the following parts:
 
-|part|description|
+|Part|Description|
 |----|-----------|
-|lab_id|identifier assigned to your lab, will be composed of the lab’s parent body and lab id, e.g. `xyz_pathology/north_street_lab`.|
-|lab_record_id|this is your internally unique identifier that can be any string. If no value is provided for the creation of a new record, a UUID will be automaticall assigned.|
-|rid|this is Shariant’s id for the record. It can only be referenced for existing records and can not be dictated for new records. If provided then lab and lab_recordid should be omitted.|
-|version|This will be a UNIX timestamp of the version when it was created. If version is omitted then you will be dealing with the editable version of the record on a POST (if you have access), or the latest version your account has access to otherwise.|
+|lab_id|Identifier assigned to your lab, will be composed of the lab’s parent body and lab id, e.g. `xyz_pathology/north_street_lab`.|
+|lab_record_id|This is your internally unique identifier that can be any string. If no value is provided for the creation of a new record, a UUID will be automaticall assigned.|
+|rid|This is Shariant’s ID for the record. It can only be referenced for existing records and can not be dictated for new records. If provided then lab and lab_record_id should be omitted.|
+|version|This will be a UNIX timestamp of the version when it was created. If the version is omitted then you will be dealing with the editable version of the record on a POST (if you have access), or the latest version your account has access to otherwise.|
 
 e.g.
 
@@ -82,7 +82,7 @@ Any change to the evidence of a record will automatically create a new version o
 
 A version is the UNIX timestamp (with decimal places) of when the record was created.
 If a value of version is provided in the ID part, then you will be referring to the read only version of the variant classification and won’t be able to perform any operations against it.
-Versions can un-published after being published, but more up to date versions can be published to become the new default.
+Versions can be un-published after being published, but more up to date versions can be published to become the new default.
 
 ## Evidence Operation
 
