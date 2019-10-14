@@ -22,4 +22,4 @@ Variants will be uploaded by different users across multiple builds, e.g. GRCh37
 
 The REDCap export does not normalise on builds currently.
 
-With the exception of the JSON format, all other formats will exclude classifications that couldn't correctly match a variant, or where the variant couldn't be converted to the desired build.
+With the exception of the JSON and CSV format, all other formats will exclude classifications that couldn't correctly match a variant, has a variant matching warning, or where the variant couldn't be converted to the desired build.
