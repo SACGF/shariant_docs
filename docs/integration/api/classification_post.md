@@ -38,7 +38,7 @@ or
 
 |POST|Effect|
 |----|------|
-|`"id":_xxx_`|See Id Part|
+|`"id":_xxx_`|See ID Part|
 |`"create":{}` or `"patch":{}` or `"overwrite":{}` or `"upsert":{}` or `"data":{}`|See Evidence Operation|
 |`"publish":"_level_"`|see Publish|
 |`"delete":true`|See Deleting |
