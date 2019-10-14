@@ -6,7 +6,7 @@ _The "user" doesn't have any special permissions to the record, it's primarily f
 
 In addition to the internal user of a classification, there's an evidence key called "owner".
 If the value provided for "owner" is valid per the criteria below, the user of the record will be changed to it.
-If no value is provided for "owner" the "owner" key and the internal user will both be set to the user who created the new classification (be it done over the web interface or using the API).
+If no value is provided for "owner", the "owner" key and the internal user will both be set to the user who created the new classification (be it done over the web interface or using the API).
 
 Criteria for owner:
 
