@@ -57,8 +57,8 @@ The ID part of a submission consists of the following parts:
 
 |Part|Description|
 |----|-----------|
-|lab_id|Identifier assigned to your lab, will be composed of the lab’s parent body and lab id, e.g. `xyz_pathology/north_street_lab`.|
-|lab_record_id|This is your internally unique identifier that can be any string. If no value is provided for the creation of a new record, a UUID will be automaticall assigned.|
+|lab_id|Identifier assigned to your lab, will be composed of the lab’s parent body and lab ID, e.g. `xyz_pathology/north_street_lab`.|
+|lab_record_id|This is your internally unique identifier that can be any string. If no value is provided for the creation of a new record, a UUID will be automatically assigned.|
 |rid|This is Shariant’s ID for the record. It can only be referenced for existing records and can not be dictated for new records. If provided then lab and lab_record_id should be omitted.|
 |version|This will be a UNIX timestamp of the version when it was created. If the version is omitted then you will be dealing with the editable version of the record on a POST (if you have access), or the latest version your account has access to otherwise.|
 
@@ -86,18 +86,18 @@ Versions can be un-published after being published, but more up to date versions
 
 ## Evidence Operation
 
-Evidence part can be provided under one of the following. A submission can only provide one at most of these elements at a time.
+Evidence part can be provided under one of the following. A submission can only provide a maximum of one of these elements at a time.
 ### create
-Provide evidence for a new record. Will error if the id part matches an existing record.
+Provide evidence for a new record. Will error if the ID part matches an existing record.
 
 ### patch
-Evidence included in this will be merged with the existing evidence of a record. Will error if the id part doesn’t match an existing record.
+Evidence included in this will be merged with the existing evidence of a record. Will error if the ID part doesn’t match an existing record.
 
 ### overwrite
 Like patch, except all existing evidence will be overwritten.
 
 ### upsert or data
-Will either act as create or patch depending on if the id part matches an existing record.
+Will either act as create or patch depending on if the ID part matches an existing record.
 
 It is suggested that you only submit with upsert, as it stops labs from having to keep track of if a record has already been submitted.
 
@@ -127,9 +127,9 @@ e.g.
 
 How the data is provided is important for mixing the use of API and the web form.
 By default, any key with anything on the right hand side other than a straight `null` will be immutable on the web form.
-This is because your own curation system is deemed to be the source of truth about a variant classification. We want to avoid a scenario where users fix data on Shariant and then your curation system is out of date. This could be followed by another sync operation where the curations out of data data then upsets over the top of the correct data in Shariant.
-The selective immutability will allow web form users to provide values for keys that your curation system can’t provide if necessary.
-Importantly web user’s ability to change the text for a “note” is not affected by the immutability status.
+This is because your own curation system is deemed to be the source of truth about a variant classification. We want to avoid a scenario where users fix data on Shariant and then your curation system is out of date. This could be followed by another sync operation where the curation system's out of date data then upsets over the top of the correct data in Shariant.
+The selective immutability will allow web form users to provide values for keys that your curation system can’t provide, if necessary.
+Importantly, a web user’s ability to change the text for a “note” is not affected by the immutability status.
 
 ### Formats
 
@@ -160,7 +160,7 @@ e.g.
 }
 ```
 ### institution
-Visible to any user that belong to a lab that belongs to the same institution as the lab the record was created against.
+Visible to any user that belongs to a lab that belongs to the same institution as the lab the record was created against.
 
 ### logged_in_users
 Visible to all logged in Shariant users and will be included in Shariant exports to other labs around Australia.
@@ -179,11 +179,11 @@ Records that have been shared with logged in users or global can be withdrawn by
 `"delete": true`
 
 Withdrawn records:
-Can be "unwithdrawn" with a subseqeunt submission for the id that doesn't have `"delete": true`.
+Can be "unwithdrawn" with a subsequent submission for the ID that doesn't have `"delete": true`.
 Do not show up in exports.
-Do not show up in classification searches.
+Do not show up in classification searches (unless searching for the ID).
 Do not count towards discordance calculations.
-Will still be accessible using their id, and will still appear in historical discordance reports that they were previously involved in.
+Will still be accessible using their ID, and will still appear in historical discordance reports that they were previously involved in.
 
 ## Bulk POST
 To perform multiple operations in one call, simply post a JSON array instead of a dictionary, e.g.
