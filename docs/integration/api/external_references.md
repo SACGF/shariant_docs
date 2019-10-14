@@ -21,7 +21,7 @@ Would parse out a reference to PubMed
 
 These values will be formatted into a specific structure on download, but for upload they just need to be in the format of REF_TYPE:REF_NUMBER.
 
-There is some leeway on the formatting, e.g. for PMID the following are allowed
+There is some leeway on the formatting, e.g. for PMID the following are allowed:
 * PMID:123456
 * PMID123456
 * PMID 123456
@@ -29,7 +29,7 @@ There is some leeway on the formatting, e.g. for PMID the following are allowed
 * PMID 123456,6543321
 * pmid 123456
 
-Typically it's the case insensitive key term followed by any number of spaces, hashes or colons and then the refereced id.
+Typically it's the case insensitive key term followed by any number of spaces, hashes or colons and then the referenced ID.
 
 Some terms do allow a comma separated list of values, but this is not preferred.
 
