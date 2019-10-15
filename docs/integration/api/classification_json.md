@@ -111,7 +111,7 @@ An example of the result of a GET or POST below
 |---|-------|
 |can_write|Can the current user perform modification operations on this record. Note if the record was requested with a version, can_write will always be false.|
 |can_write_latest|If you are viewing a classification at a specific version, would the user be able to edit the working copy for this classification.|
-|flag_collection|ID for as the yet unpublished flag API (used for discordance resolution and notifications)|
+|flag_collection|Used internally within Shariant, please ignore.|
 |has_changes|True if there are changes on the record that aren't in the latest published version|
 |institution_name|English friendly name of the institution/organisation which the lab belongs to.|
 |lab_id|How the lab should be referred to via API. Will be in the form of instiution_id/lab_part_id|
