@@ -89,7 +89,7 @@ An example of the result of a GET or POST below
 |key|meaning|
 |---|-------|
 |clingen_allele_id|ID of the cross genome-build allele as known by ClinGen|
-|(genome build)|Shariant will attempt to generate a Chr37 and Chr38 record for e
+|(genome build)|Shariant will attempt to generate a Chr37 and Chr38 record for each variant, the details of which will be found under the keys "GRCh37" and "GRCh38"|
 |c_hgvs|The normalised c.hgvs as determined by Shariant|
 |g_hgvs|The normalised g.hgvs as determined by Shariant|
 |variant|Chromosome, Position, Ref and Alt|
