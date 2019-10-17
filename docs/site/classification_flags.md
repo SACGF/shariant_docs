@@ -48,6 +48,12 @@ This classification is not yet linked to a variant
 1. If this has a status of In Progress we should match it to a variant shortly, no action required.
 2. If this has the status of Matching Failed we were unable to normalise the variant provided based on the c.hgvs and genome build values. Please contact Shariant support for help in resolving this.
 
+### ![](images/matching-warning.png) Matching Warning
+Shariant normalised the c.hgvs of this record to something differnt than what was provided.
+This classification has been matched to a variant, but requires a manual check to ensure it was matched correctly
+1. If you believe it was matched correctly, select a status of Variant Confirmed and Save
+2. If you believe this is not the variant inteded, select a status of Variant Rejected and Save. An admin will then attempt to fix the problem.
+
 ### ![](images/outstanding_edits.png) Outstanding Edits
 Edits have been made to this classification that are not included in a published version.
 1. From the classification form, ensure there are no validation errors stopping this record from being published.
