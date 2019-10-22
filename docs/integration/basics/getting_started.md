@@ -53,7 +53,14 @@ You must also not enter such information into summaries or other fields you are 
 
 Your **lab record id** should be a number like "10125" which doesn't mean anything and can only be matched to a sample or patient if you have access to your own secured patient record system or a record of the mappings.
 
-## Step 4 : Maintenance & user interaction
+## Step 4 : Hosting the connector
+
+Some labs will find it difficult to run arbitrary code on a machine in their domain without violating IT policies.
+Shariant maintains several s3 buckets where clients can upload files to be automatically mapped.
+
+Discuss with the Shariant team if you think this will be a part of your solution.
+
+## Step 5 : Maintenance & user interaction
 
 The Shariant API will return error messages for records that fail variant matching or are missing mandatory fields. Someone needs to periodically examine these logs and resolve any issues.
 
@@ -62,7 +69,7 @@ Some issues can be fixed by updating your curation system and waiting for the ne
 
 Assigning resposible users may cause less coordination work for your team, though any lab member can see and edit all of your lab's classifications.
 
-## Step 5 : How best can your system integrate data from Shariant
+## Step 6 : How best can your system integrate data from Shariant
 
 Shariant provides an API for bulk downloading of classifications.
 Currently we provide classifications in our own JSON format, CSV, MVL, VCF. It is expected that most systems will be able to use these formats but some may require a custom solution.
