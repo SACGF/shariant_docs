@@ -75,7 +75,7 @@ Shariant offers additional features to the international database, ClinVar, incl
 Shariant is also streamlining the process of submitting to ClinVar, enabling laboratories to do so in a semi-automated manner, at their discretion. 
 
 ## Who can access the data?
-Shariant is a controlled access platform. Therefore, access to Shariant is restricted to experts in the field and managed via Australian Genomics. Users must agree to the terms of use, which includes clauses to forbid data re-distribution, and requires approval to publish findings using data obtained from Shariant.
+Shariant is a controlled access platform. Therefore, access to Shariant is restricted to experts in the field and managed via Australian Genomics. Users must agree to the [terms of use](terms_and_conditions.md), which includes clauses to forbid data re-distribution, and requires approval to publish findings using data obtained from Shariant.
 
 Upon laboratory approval, clinically curated variants and associated evidence will be submitted to external databases (such as ClinVar). These external databases may be public (no login required) and can therefore be accessed by anyone with internet access. 
 
