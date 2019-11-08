@@ -8,7 +8,7 @@ This documentation provides information both for web users or the product, and d
    :caption: What is Shariant
 
    faq/faq
-   faq/icons
+   faq/terms_and_conditions
 
 If you are viewing classifications, fixing issues, resolving discordances
 -------------------------------------------------------------------------
