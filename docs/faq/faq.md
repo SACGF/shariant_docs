@@ -49,9 +49,7 @@ Shariant aims to share information about clinically curated variants to:
 Most importantly, Shariant is designed to assist healthcare professionals deliver better genomics results. If you have suggestions for how Shariant might be helpful to you, please let the Shariant team know ( [communications@shariant.org.au](mailto:communications@shariant.org.au) ).
 
 ## Who is behind Shariant?
-Shariant is an Australian Genomics initiative, run under its national project on Clinical Variant Classification and Sharing led by Amanda Spurdle at QIMR Berghofer Medical Research Institute. The project was established in response to an identified need, from Australian 
-
-Genomics’ member organisations and Australian clinical genetic testing laboratories, for assistance in meeting the growing technical and administrative requirements for clinical data sharing. 
+Shariant is an Australian Genomics initiative, run under its national project on Clinical Variant Classification and Sharing led by Amanda Spurdle at QIMR Berghofer Medical Research Institute. The project was established in response to an identified need, from Australian Genomics’ member organisations and Australian clinical genetic testing laboratories, for assistance in meeting the growing technical and administrative requirements for clinical data sharing. 
 
 The Shariant platform is based on existing software, 'VariantGrid.com', developed by David Lawrence at the Centre for Cancer Biology, an SA Pathology and University of South Australia Alliance.
 
@@ -123,7 +121,9 @@ Yes. Shariant aims to connect to all interested Australian NATA-accredited genet
 * Testing output of the laboratory
 * Whether a laboratory is public or private
 
-Please contact the Shariant team, if you are interested in connecting to Shariant ( [communications@shariant.org.au](mailto:communications@shariant.org.au) ).# What is the timeframe for the development of Shariant?
+Please contact the Shariant team, if you are interested in connecting to Shariant ( [communications@shariant.org.au](mailto:communications@shariant.org.au) ).
+
+## What is the timeframe for the development of Shariant?
 Shariant is currently under rapid development, with new features being added each week. A beta-version of Shariant will be released for pilot testing in June 2019. After three laboratories have been successfully linked to Shariant, the platform will be rolled out nationally at all other interested Australian laboratories. Full technical support will be provided to assist laboratories connect to the platform.
 
 Please contact the Shariant team if your laboratory has expertise in variant curation and is interested in testing the beta-release of Shariant. 
