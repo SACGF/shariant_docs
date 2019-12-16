@@ -2,7 +2,7 @@
 
 Each classification flag indiciates that there is an action that needs to be performed against the classification.
 
-Many of the flags will be automatically raised by Shariant, though some of them you will be able to open yourself.
+Many of the flags will be automatically raised by Shariant, though you will be able to open some of them yourself.
 
 To look at the details of a specific open flag, simply click on it to be taken to the flag dialog.
 
@@ -15,11 +15,11 @@ Note that only important flags still show up when closed, e.g. suggestions and i
 
 In the provided screenshot, we can see that we have an open flag asking us to share the classification, a completed internal review, an accepted suggestion and a rejected suggestion, as well as the buttons to create new internal reviews and suggestions.
 
-You can visit the details of an open flag, or a closed one by clicking on the icon.
+You can visit the details of an open flag or a closed one by clicking on the icon.
 
 From the details page of an open flag, depending on the type of flag, you can add a comment and potentially change the status of a flag.
 
-You can raise a new flag by clicking on one of the icons near the bottom with a plus button.
+You can raise a new flag by clicking on icons that have a "plus" button near the bottom of the dialog.
 
 (The kinds of actions you can take on flags will depend on if you're looking at a classification from your lab or another lab.)
 
@@ -37,7 +37,7 @@ This classification is in discordance with one or more classifications.
 This is discussed in the [Classification Discordance](classification_discordance) page.
 
 ### ![](images/work.png) Internal Review
-This classification is marked as currently being internally reviewed.
+This classification is marked as currently undergoing internal review.
 1. Once the internal review is complete, ensure you update the classification in your curation system.
 2. Mark the internal review as Completed.
 
@@ -45,11 +45,11 @@ This is discussed in the [Classification Discordance](classification_discordance
 
 ### ![](images/not-found.png) Matching Variant
 This classification is not yet linked to a variant
-1. If this has a status of In Progress we should match it to a variant shortly, no action required.
-2. If this has the status of Matching Failed we were unable to normalise the variant provided based on the c.hgvs and genome build values. Please contact Shariant support for help in resolving this.
+1. If this has a status of In Progress we should match it to a variant shortly and no action is required.
+2. If this has the status of Matching Failed, we were unable to normalise the variant provided based on the c.hgvs and genome build values. Please contact Shariant support for help in resolving this.
 
 ### ![](images/matching-warning.png) Matching Warning
-Shariant normalised the c.hgvs of this record to something differnt than what was provided.
+The c.hgvs imported and the c.hgvs made after normalised by Shariant differs. 
 This classification has been matched to a variant, but requires a manual check to ensure it was matched correctly
 1. If you believe it was matched correctly, select a status of Variant Confirmed and Save
 2. If you believe this is not the variant inteded, select a status of Variant Rejected and Save. An admin will then attempt to fix the problem.
@@ -60,9 +60,9 @@ Edits have been made to this classification that are not included in a published
 2. At the bottom of the form, click the tick to submit the outstanding changes.
 
 ### ![](images/exchange.png) Significance Changed
-This classification has changed it's clinical significance compared to a previously published version.
+This classification has changed its clinical significance compared to a previously published version.
 1. Set the status of this flag to reflect the primary reason behind the change in classification.
-2. Please also add a comment providing some context.
+2. Please add a comment providing some context.
 
 This is discussed in more detail on the [Classification Discordance](classification_discordance) page.
 
@@ -76,7 +76,7 @@ Someone has raised suggestion(s) against this classification.
 This classification is not yet shared outside of your lab or institution.
 1. From the classification form, ensure there are no validation errors stopping this record from being published.
 2. Review the content of the classification to make sure it's ready to be shared.
-3. At the bottom of the form, click the Share to submit at a higher share level.
+3. At the bottom of the form, click the "Share" button to submit at a higher share level.
 
 ### ![](images/trash.png) Withdrawn
 This classification has been marked as withdrawn. It will be hidden from almost all searches and exports.
