@@ -20,9 +20,10 @@ In most cases the "default" clinical group per allele will be sufficient.
 Two (or more) classifications are considered discordant if they:
 * Belong to the same allele
 * Belong to the same clincal group within that allele (including the "default" clinical group)
-* Transcript & condition do not directly affect the calculation unless a human determines the differences in those values designate a different clinical group
 * Are shared at the Shariant Users level or 3rd Party Database level
-* Have clinical signifiances that fall into 2 or more of the following buckets (benign/likely benign), (VUS A/B/C), (likely pathogenic/ pathogenic), risk factor . e.g. likely benign is discordant with VUS, but likely benign is concordant with benign.
+* Have clinical signifiances that fall into two or more of the following buckets (benign/likely benign), (VUS A/B/C), (likely pathogenic/ pathogenic), risk factor e.g. likely benign is discordant with VUS, but likely benign is concordant with benign.
+
+Transcript & condition do not directly affect the calculation unless a human determines the differences in those values designate a different clinical group.
 
 ## Discordance... Now what?
 
@@ -34,56 +35,54 @@ A good place to start is the Discordance Report. The Discordance flag will provi
 
 ![](images/discordance_report.png)
 
-This shows you all:
-When the discordance was first detected and why.
-* The classifications that were involved at the start of this discordance.
-* The state of the classifications at the beginning of the discordance.
-* The state of the classifications as they are now (or after the discordance was resolved if it has been)
+This shows you:
+* When the discordance was first detected and why
+* The records that were involved at the start of this discordance
+* The clinical significance & last curated date at the beginning of the discordance.
+* The clinical significance & last curated date as they are now (or after the discordance was resolved if it has been)
 * A summary of actions taken against each classification.
 
 ### ![](images/work.png) Internal Review
 
-When discordance is first detected, it is recommended practise to perform an internal review of the classification.
+When discordance is first detected, it is recommended practice to perform an internal review of the classification (particularly if the classification hasn't been reviewed in the last 12 months).
 
 You can raise an internal review flag in "In Progress" and complete it later, or if you perform an internal review you can raise the flag as "Complete".
 This will then show up in the report that an internal review has taken place.
 
-For the actual performing of the internal review, the exact steps will be different for each organisation, but it should done as a double check as now somebody else came up with a different answer.
+The steps involved in performing an internal review will likely differ between each lab, but is recommended  due to the presence of a discordance.
 
-If the internal review found that some data should be changed, please change the record in your curation system and the update will be applied the next time your data in synced up.
+If the internal review finds that data should be changed, please change the record in your curation system and the update will be applied the next time your data in synced with Shariant.
 
-Note that you are welcome to do (and record) Internal Reviews outside of discordance, though doing so is not required from Shariant.
+Note that you are welcome to do (and record using the flags) internal reviews outside of a discordance being detected, though doing so is not required by Shariant.
 
 ### Who's in Charge / Responsible
 
-The owner of the classficaton that triggered the discordance is seen as the primary person in charge of resolving discordance. Note that this is not enforced in Shariant, anybody is free to take the lead on this.
+The owner of the classficaton that triggered the discordance is seen as the primary person in charge of resolving discordance. Note that this is not enforced in Shariant, anybody is free to take the lead resolving a discordance.
 
 ### Discordance Discussion
 
-Once you've completed your internal review, you should investigate what other labs have provided for the same variant.
+Once you've completed your internal review, you should investigate what evidence other labs have provided for the same variant.
 
 The diff page is a good place to do this as it shows all the details of the classifications that are involved in the discordance discussion. (The Discordance Flag will provide a link to this.)
 
 See details [About the Diff Page here](classification_diffs)
 
-See if there's any relevant data that other labs have included that your lab may have missed (e.g. internal laboratory assays from another lab). Likewise after reviewing details from another lab's classification, you can raise ![](images/lightbulb.png) "Suggestion" flags on their classifications.
+On the diff page, highlighting designates when there are differences between the classifications. It will show if there are any differences in the criteria applied or evidence used, including evidence that may be internal to a lab (e.g. internal laboratory assays from another lab). Likewise after reviewing details from another lab's classification, you can raise ![](images/lightbulb.png) "Suggestion" flags on their classifications. "Suggestion" flags are able to provide a means of communicating with another lab.
 
-When reviewing the other classification, keep in mind what flags they already have open and closed e.g. they may not have yet completed an Internal Review or there might be some previously recorded accepted and rejected suggestions.
-Also keep if somebody has agreed to make a change, it may take some time for that change to be synced back up to Shariant.
+When reviewing the other lab's classification, keep in mind what flags have already been opened and closed e.g. they may have not yet completed an Internal Review or there might be some previously recorded accepted and rejected suggestions.
+Also keep in mind that if a lab has agreed to make a change, it may take some time for that change to be synced back up to Shariant from the lab's curation system.
 
 ### ![](images/exchange.png) Change of Clinical Significance
 
-If as a result of an Internal Review, Suggestions or outside discussions you may have changed your Clinical Significance (hopefully towards concordance).
-Whenever a classification is updated with a different clinical significance, a flag is automatically raised asking for the reason.
-That reason will then be translated to the Discordance Report.
-Note that even if the report has been closed, if you still have outstanding Clinical Significance Change flags you can still update them and it will be reflected.
+If as a result of an Internal Review, Suggestions or outside discussions you have changed your Clinical Significance (hopefully towards concordance) in your curation system and this has been synced with Shariant, a flag is automatically raised asking for the reason behind a change. That reason will then be translated to the Discordance Report.
+Note that even if the discordance report has been closed, you are still able to update any outstanding Clinical Significance Change flags and this will be reflected in the discordance report.
 
 ### Withdrawing
 
-If a classification that caused the discordance has been found to be in large error and shouldn't be considered in its current form, the owner of the classification may mark it as Withdrawn from the classification form.
+If a classification that caused the discordance has been found to be an error and shouldn't be considered in its current form, the owner of the classification may mark it as Withdrawn from the classification form.
 
 Withdrawn classifications are not considered during discordance calculations.
-(It will still appear on the report, but will be struck out to indiciate it is no longer considered.)
+(It will still appear on the report, but will be struck out to indicate it is no longer considered.)
 
 ### Comparisons are not Relevant
 
@@ -92,18 +91,19 @@ If you determine you have two or more classifications that are discordant but fo
 For example, if a variation is Pathogenic for "Tietz syndrome" and benign for "Carpenter syndrome" you can divide classifications up into both.
 To do so from the variant page, click "Change Clinical Grouping".
 
-A column for clinical grouping will appear, any classifications that have the same text in that column will be considered in the same Clinical Grouping. Note that a Clinical Grouping is just a free text name and the classifications that belong to it.
+A column for clinical grouping will appear, any classifications that have the same text in that column will be considered in the same Clinical Grouping. Note that a Clinical Grouping is a free text name and the classifications that belong to it.
 
 Once you've updated it so classificaitons have the appropriate groupings, hit save. This may resolve (or cause) outstanding discordances.
-It is suggested that if you do subdivide records, that you don't leave any in that variant in the "default" grouping for that Aalele.
+
+It is suggested that if you do subdivide records, that you don't leave any in the "default" grouping for that allele.
 
 ### Concordance is Reached
 
-If you or another lab changes
+If you or another lab:
 * Sub-divide classifications into more meaningful groupings. (should only be rarely required)
 * Withdraw classifications that aren't in concordance. (should only be rarely required)
 * Change clinical significances so all the remaining classifications are in the same clinical significance bucket.
-Then you will have reached concordance and the discordance and report will automatically close. Congradulations.
+Then you will have reached concordance and the discordance and discordance report will automatically close. Congratulations.
 
 ### Stuck in Discordance
 
