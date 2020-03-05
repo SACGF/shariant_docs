@@ -1,8 +1,6 @@
 # API Variant Classification POST
 
-All operations against a variant classification submission from your lab can be performed against a single end point.
-
-That end point being
+All operations against a variant classification submission from your lab can be performed against a single end point:
 https://shariant.org.au/variantclassification/api/classifications/v2/record/
 
 Ensure that any posts there are passing the required authentication data and is sending data as ContentType "application/json"
@@ -12,7 +10,7 @@ Ensure that any posts there are passing the required authentication data and is 
 ```json
 {
 	"id":"xyz_pathology/north_street_lab/F03432",
-	"upsert": {
+	"data": {
 		"c_hgvs": "NM_000071.2(CBS):c.1539C>T",
 		"genome_build": "GRCh37",
 		"clinical_significance": "VUS",
@@ -22,7 +20,6 @@ Ensure that any posts there are passing the required authentication data and is 
 		"literature": "Found a book PMID: 342244"
 	},
 	"publish": "institution",
-	"editable": true,
 	"return_data": "changes"
 }
 ```
@@ -41,7 +38,7 @@ or
 |`"id":_xxx_`|See ID Part|
 |`"create":{}` or `"patch":{}` or `"overwrite":{}` or `"upsert":{}` or `"data":{}`|See Evidence Operation|
 |`"publish":"_level_"`|see Publish|
-|`"delete":true`|See Deleting |
+|`"delete":true`|See Deleting|
 |`"test":true`|The effects of your POST operation will not be saved on the server. This is handy for validation.|
 |`"editable": true`|Will not mark uploaded values as immutable for web form users, i.e. they'll be able to overwrite what was uploaded.|
 |`"return_data": true`|Will return the complete list of evidence stored against this record|
@@ -78,11 +75,10 @@ or
 
 ## Versions
 Any change to the evidence of a record will automatically create a new version of that record.
-(The exception being if multiple changes are done to a record by the same user in the same method within one minute, those changes will be merged into one version).
 
-A version is the UNIX timestamp (with decimal places) of when the record was created.
-If a value of version is provided in the ID part, then you will be referring to the read only version of the variant classification and won’t be able to perform any operations against it.
-Versions can be un-published after being published, but more up to date versions can be published to become the new default.
+A version is denoted by the UNIX timestamp (with decimal places) of when the record was altered.
+If a value of version is provided in the ID part, then you will be referring to the read only version of the variant classification at that point in time and won’t be able to perform any operations against it.
+Versions cannot be un-published after being published, but more up to date versions can be published to become the new default.
 
 ## Evidence Operation
 
@@ -93,13 +89,13 @@ Provide evidence for a new record. Will error if the ID part matches an existing
 ### patch
 Evidence included in this will be merged with the existing evidence of a record. Will error if the ID part doesn’t match an existing record.
 
-### overwrite
-Like patch, except all existing evidence will be overwritten.
-
 ### upsert or data
 Will either act as create or patch depending on if the ID part matches an existing record.
 
 It is suggested that you only submit with upsert, as it stops labs from having to keep track of if a record has already been submitted.
+
+### overwrite
+Like upsert, except all existing evidence (if any) will be overwritten.
 
 ## Evidence Format
 The content of create/patch/overwrite/upsert will be using keys as seen in the evidence keys section, with keys matching a value or a dictionary with a key of value or note.
@@ -133,19 +129,24 @@ Importantly, a web user’s ability to change the text for a “note” is not a
 
 ### Formats
 
-`key : null` This completely blanks out any value associated with the key. Value, note, immutability will all be reset.
-`key : value` This will set the value for a key as well as wiping any note. Web form immutability will be set unless otherwise configured.
-`key : { “value”: "<value>", “note”: "<note>" }` If only value or note are provided, this will merge with existing data. e.g. only providing value will leave any existing note untouched. Immutability will be set.
+`key : null` This completely blanks out any value associated with the key. Value, note, explain will be blanked. Web form immutability will be set unless otherwise configured.
 
-The preferred method is `key: {“value”: x}` (with note only if your curation system can send notes). For records that don’t have values for certain keys that you would normally sync, provide `key: {“value”: null}` instead of omitting the entry all together. This is so immutability is set appropriately.
+`key : <value>` This will set the value for a key as well as wiping any note. Web form immutability will be set unless otherwise configured.
+
+`key : { "value": "<value>", “note”: "<note>", "explain": "<explain>" }` If only a subset of value, note or explain are provided, this will merge with existing data. e.g. only providing value will leave any existing note and explain untouched. Immutability will be set.
+
+The preferred method is `key: {“value”: x}` (with note only if your curation system can send notes). For records that don’t have values for certain keys that you would normally sync, provide `key: null` instead of omitting the entry all together. This is so immutability is set appropriately.
 
 ### Values
 
 The individual entries valid for values will depend on the associated key types,
 e.g. "BP4" accepts "NM", "BS", "BP", <etc>, true
+	
 "variant_type" accepts "indel", "splice_site" etc
+
 "mode_of_inheritance" accepts ["autosomal_dominant","other"] or "autosomal_dominant, other"
-See the Evidence Key Type page for more details.
+
+See the [Evidence Key Types](types.md) page for more details.
 
 ## Sharing
 You can provide a publish flag in a POST. If create/patch/overwrite/upsert is provided, the publish will relate to the record as it is after applying that change.
@@ -179,7 +180,7 @@ Records that have been shared with logged in users or global can be withdrawn by
 `"delete": true`
 
 Withdrawn records:
-Can be "unwithdrawn" with a subsequent submission for the ID that doesn't have `"delete": true`.
+Can be "unwithdrawn" with a subsequent submission for the ID that doesn't have `"delete": true` or via the dashboard within the application.
 Do not show up in exports.
 Do not show up in classification searches (unless searching for the ID).
 Do not count towards discordance calculations.
