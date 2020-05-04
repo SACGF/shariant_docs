@@ -4,13 +4,12 @@ The Shariant web interface provides a page that will build the GET URL for gener
 
 https://shariant.org.au/variantclassification/export
 
-To build URLs such as 
+To build re-usable URLs for downloading data.
 
-https://shariant.org.au/variantclassification/api/classifications/export?share_level=public&build=GRCh38&type=mvl&conflict_strategy=most_pathogenic&exclude_labs=testy_pathology%2Flab_zues
+Please note the following properties of the export:
 
-These URLs will still require an authenticated request to download.
-
-Please note the following properties of the export.
+The URL you generate by default will be for a web browser bookmark. In the case of wanting to generate a URL for some custom software to download you can choose to download for "API".
+_In both cases it will still require a logged in user to perform the download._
 
 Ensure that your own lab(s) are excluded from the download. You don't want your own records to refer to themselves via their Shariant copies.
 
@@ -18,6 +17,6 @@ Some formats can only provide limited information (e.g. MVL and VCF), but MVLs p
 
 Variants will be uploaded by different users across multiple builds, e.g. GRCh37 and GRCh38. Most download formats convert all variants to a single build. Downloads may still contain specific data for the genome build used by the submitting user.
 
-The REDCap export does not normalise on builds currently.
-
 With the exception of the JSON and CSV format, all other formats will exclude classifications that couldn't correctly match a variant, have a variant matching warning, or where the variant couldn't be converted to the desired build.
+
+Some formats have additional formatting options, use these to customise the downloads to your curation system's preferences.
