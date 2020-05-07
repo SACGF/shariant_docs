@@ -21,7 +21,7 @@ Two (or more) classifications are considered discordant if they:
 * Belong to the same allele
 * Belong to the same clincal group within that allele (including the "default" clinical group)
 * Are shared at the Shariant Users level or 3rd Party Database level
-* Have clinical signifiances that fall into two or more of the following buckets (benign/likely benign), (VUS A/B/C), (likely pathogenic/ pathogenic), risk factor e.g. likely benign is discordant with VUS, but likely benign is concordant with benign.
+* Have clinical significances that fall into two or more of the following buckets (benign/likely benign), (VUS A/B/C), (likely pathogenic/ pathogenic), risk factor e.g. likely benign is discordant with VUS, but likely benign is concordant with benign.
 
 Transcript & condition do not directly affect the calculation unless a human determines the differences in those values designate a different clinical group.
 
