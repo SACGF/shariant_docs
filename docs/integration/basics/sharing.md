@@ -33,3 +33,17 @@ Sharing can be done at several levels. Each level encompasses the level before i
 See the Sharing section in the API for information on how to utilise these share levels.
 
 Just a reminder that the purpose of Shariant is to share records.
+
+## Max share level
+
+Some [evidence keys](../evidence_keys/overview.md) have a “max share level” and are never shared beyond that level, regardless of the overall classification share level.
+
+For instance __curated_by__ and __curation_verified_by__ have a max share level of institution, which means only your users can see them. Users from other organizations can see the classification was from your lab, but not who did the curation.
+
+**What your institute sees:**
+
+![](../../site/images/classification_group.png)
+
+**What others see:**
+
+![](../../site/images/classification_shared.png)
