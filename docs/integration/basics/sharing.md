@@ -21,6 +21,8 @@ If someone from outside your lab shares a record with Shariant, you will be deal
 
 Users with access to the editable version can elect to share the record in its current state as long as there are no outstanding validation errors. This will give other users read only access to the data as it is when the publish action was performed.
 
+## Share levels
+
 Sharing can be done at several levels. Each level encompasses the level before it, and once it's shared at a certain level it can only be shared at that level or higher in future. The share levels are:
 
 |Share Level|Who Can See|
@@ -34,7 +36,7 @@ See the Sharing section in the API for information on how to utilise these share
 
 Just a reminder that the purpose of Shariant is to share records.
 
-## Max share level
+## Evidence max share level
 
 Some [evidence keys](../evidence_keys/overview.md) have a “max share level” and are never shared beyond that level, regardless of the overall classification share level.
 
