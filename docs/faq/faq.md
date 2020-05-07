@@ -126,4 +126,9 @@ Please contact the Shariant team, if you are interested in connecting to Sharian
 ## What is the timeframe for the development of Shariant?
 Shariant is currently under rapid development, with new features being added each week. A beta-version of Shariant will be released for pilot testing in June 2019. After three laboratories have been successfully linked to Shariant, the platform will be rolled out nationally at all other interested Australian laboratories. Full technical support will be provided to assist laboratories connect to the platform.
 
-Please contact the Shariant team if your laboratory has expertise in variant curation and is interested in testing the beta-release of Shariant. 
+Please contact the Shariant team if your laboratory has expertise in variant curation and is interested in testing the beta-release of Shariant.
+
+## How are Shariant and VariantGrid related?
+
+[VariantGrid](https://variantgrid.com) is a variant database and web analysis platform, and is the technology licenced by Australian Genomics to build Shariant.
+
