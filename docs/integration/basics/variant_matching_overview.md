@@ -77,18 +77,20 @@ HGVS nomenclature specifies right alignment. The table below (copied from ClinGe
 
 **Shariant Solution**: HGVS coordinates are converted into VCF coordinates, then all VCF (or VCF from HGVS) coordinates are run through VT normalise before linking to a variant.
 
-## Cross mapping between different genome builds
+## Conversion between genome builds
 
 It is not always possible to lift-over all variants to another build, with rates of ~97% being commonly reported.
 
 Newer builds have resolved some difficult sequences and introduced additional haplotypes (different reference sequences for regions of the genome that vary between human populations). Therefore, it may be possible that two distinct variants in one genome build will lift over to become a single variant in another genome build, or vice versa. A naive lift-over of two separate classifications from the same genome build may make those same classifications discordant on another genome build.
 
-**Shariant Solution**: The ClinGen Allele Registry will be used to solve this problem by providing a globally unique ID (CAid) which can link variants across different genome builds. When a classification is imported which resolves to a novel variant in Shariant, an API request will be made to the ClinGen Allele Registry to retrieve or create an CAid for this variant.
+**Shariant Solution**: The [ClinGen Allele Registry](http://reg.clinicalgenome.org/redmine/projects/registry/genboree_registry/landing) will be used to solve this problem by providing a globally unique ID (CAid) which can link variants across different genome builds. When a classification is imported which resolves to a novel variant in Shariant, an API request will be made to the ClinGen Allele Registry to retrieve or create an CAid for this variant.
 
 The variant classification discordance process implemented in Shariant will work against these CAids (please refer to Shariant Technical Overview). 
 
 CAids can also be used as Evidence Keys to provide unambiguous linking of classifications to variants, and simplify submission to ClinVar.
 References
+
+The HGVS for a classification may change after liftover, see [Gene/Transcripts/Builds FAQ](gene_transcripts_builds_faq.md) 
 
 ## References
 

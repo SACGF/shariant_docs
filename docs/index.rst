@@ -26,7 +26,7 @@ If you are viewing classifications, fixing issues, resolving discordances
    site/classification_form
    site/classification_listing
 
-If you are working on the technical connection to Sharaint
+If you are working on the technical connection to Shariant
 ----------------------------------------------------------
 
 .. toctree::
@@ -39,6 +39,7 @@ If you are working on the technical connection to Sharaint
    integration/basics/sharing
    integration/basics/variant_matching_overview
    integration/basics/variant_matching_technical
+   integration/basics/gene_transcripts_builds_faq
 
 .. toctree::
    :maxdepth: 1
