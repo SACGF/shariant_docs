@@ -1,6 +1,6 @@
 # API Variant Classification JSON
 
-Retrieving classification data by JSON is possible, but it is expect that the Shariant export page will offer a format more friendly to your curation system e.g. VCF, MVL.
+Retrieving classification data by JSON is possible, but it is expect that the [Variant Classification Download](../downloads/downloads) will offer a format more friendly to your curation system e.g. VCF, MVL.
 
 If the format you need is not available, contact us and we'll see if we can add it.
 

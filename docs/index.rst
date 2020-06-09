@@ -50,12 +50,17 @@ If you are working on the technical connection to Shariant
 
 .. toctree::
    :maxdepth: 1
-   :caption: API
+   :caption: API (Upload)
 
    integration/api/philosophy
    integration/api/authentication
    integration/api/classification_post
    integration/api/classification_owner
-   integration/api/classification_export
    integration/api/classification_json
    integration/api/external_references
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Downloads
+
+   integration/downloads/downloads

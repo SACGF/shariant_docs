@@ -146,7 +146,7 @@ e.g. "BP4" accepts "NM", "BS", "BP", <etc>, true
 
 "mode_of_inheritance" accepts ["autosomal_dominant","other"] or "autosomal_dominant, other"
 
-See the [Evidence Key Types](types.md) page for more details.
+See the [Evidence Key Types](../evidence_keys/types) page for more details.
 
 ## Sharing
 You can provide a publish flag in a POST. If create/patch/overwrite/upsert is provided, the publish will relate to the record as it is after applying that change.
