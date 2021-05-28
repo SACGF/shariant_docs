@@ -91,16 +91,9 @@ Withdrawn classifications are not considered during discordance calculations.
 (It will still appear on the report, but will be struck out to indicate it is no longer considered.)
 
 ### Clinical Re-Groupings
-If you determine you have two or more classifications that are discordant but for good reason, you can change the Clinical Grouping of the records.
+If you determine you have two or more classifications that are discordant but for good reason, you can request an admin member change the Clinical Grouping of the records.
 
-For example, if a variation is Pathogenic for "Tietz syndrome" and benign for "Carpenter syndrome" you can divide classifications up into both.
-To do so from the variant page, click "Change Clinical Grouping".
-
-A column for clinical grouping will appear, any classifications that have the same text in that column will be considered in the same Clinical Grouping. Note that a Clinical Grouping is a free text name and the classifications that belong to it.
-
-Once you've updated it so classificaitons have the appropriate groupings, hit save. This may resolve (or cause) outstanding discordances.
-
-It is suggested that if you do subdivide records, that you don't leave any in the "default" grouping for that allele.
+For example, if a variation is Pathogenic for "Tietz syndrome" and benign for "Carpenter syndrome", an admin can divide classifications up into both.
 
 ### Continued Discordance
 
