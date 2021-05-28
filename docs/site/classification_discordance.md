@@ -31,16 +31,14 @@ So if one of your classifications meets the discordance criteria with another cl
 
 ## Discordance Report
 
-A good place to start is the Discordance Report. The Discordance flag will provide you a link to get to here.
+A good place to start is the Discordance Report.
 
 ![](images/discordance_report.png)
 
 This shows you:
 * When the discordance was first detected and the action that triggerd it
 * The records that were involved at the start of this discordance
-* The clinical significance & last curated date at the beginning of the discordance.
-* The clinical significance & last curated date as they are now (or when the discordance was resolved if it has been)
-* A summary of actions taken against each classification.
+* The clinical significance as it either is now (if discordance is onging) or how it was at the end of discordance.
 
 ### Who's in Charge / Responsible
 
