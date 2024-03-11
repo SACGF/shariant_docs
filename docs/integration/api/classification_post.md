@@ -1,7 +1,7 @@
 # API Variant Classification POST
 
 All operations against a variant classification submission from your lab can be performed against a single end point:
-https://shariant.org.au/variantclassification/api/classifications/v2/record/
+https://shariant.org.au/classification/api/classifications/v2/record/
 
 Ensure that any posts there are passing the required authentication data and is sending data as ContentType "application/json"
 

@@ -2,7 +2,7 @@
 
 A variant classification in Shariant is mostly comprised of evidence key values.
 
-[Evidence keys can be viewed here](https://shariant.org.au/variantclassification/evidence_keys)
+[Evidence keys can be viewed here](https://shariant.org.au/classification/evidence_keys)
 
 Extra details
 

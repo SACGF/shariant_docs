@@ -31,7 +31,7 @@ def ping() {
 	)
 	auth = OAuth2(client_id = client_id, token = token)
 
-	r = requests.get('https://shariant.org.au:444/variantclassification/api/evidence_keys', auth=auth)
+	r = requests.get('https://shariant.org.au/classification/api/evidence_keys', auth=auth)
 }
 ```
 

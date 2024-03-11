@@ -32,7 +32,7 @@ Some additional questions you may want to ask at this point:
 
 ## Step 3 : Mapping from your structure to Shariants
 
-Given any individual field you can enter in your system, how does it map to our [pre-registered set of evidence keys](https://shariant.org.au/variantclassification/evidence_keys)?
+Given any individual field you can enter in your system, how does it map to our [pre-registered set of evidence keys](https://shariant.org.au/classification/evidence_keys)?
 The sync tool may just need to use a different field name, or the mapping process may be more complicated.
 
 For example, if your system has a Yes/No field called "This gene is known to be associated with X-linked recessive disease." that would map to our field "mode_of_inheritance" with a value of "x_linked_recessive".
